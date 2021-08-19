@@ -2,5 +2,8 @@
 # Каждый элемент должен быть выведен с новой строки.
 
 fruits = ["яблоко", "банан", "киви", "ананас", "груша"]
-
-# TODO: your code here
+i = 1
+elem = []
+for elem in fruits:
+    print(i,elem)
+    i += 1
