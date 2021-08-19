@@ -1,6 +1,10 @@
-# Дан список имен.
-# Найдите самое длинное имя, если таких имен несколько - выведи любое их них
-
 names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
-
-# TODO: your code here
+i = 0
+length = 0
+longest = 0
+while i < len(names):
+    if len(names[i]) > length:
+        longest = names[i]
+        length = len(names[i])
+    i += 1
+print(longest)
