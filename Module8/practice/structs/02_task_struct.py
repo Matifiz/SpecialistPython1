@@ -5,3 +5,16 @@
 #   например, lst = [1, 2, 4, 5, 6, 2, 5, 2], нужно получить lst2 = [1, 2, 4, 5, 6]
 #   2. элементы исходного списка, которые не имеют повторений(встречаются только один раз):
 #   например, lst = [1 , 2, 4, 5, 6, 2, 5, 2], нужно получить lst2 = [1, 4, 6]
+
+
+import random
+numbers = []
+n = 10
+for _ in range (10):
+    numbers.append(random.randint(-10, 10))
+print(numbers)
+no_repeat = []
+for el in numbers:
+    if el not in no_repeat:
+        no_repeat.append(el)
+print(no_repeat)
