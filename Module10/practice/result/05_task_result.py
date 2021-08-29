@@ -25,3 +25,10 @@
 # 2
 # Выходные данные-2:
 # 0
+import math
+height = int(input("Введите количество этажей в доме: "))
+kolya_floor = int(input("Введите номер этажа Коли: "))
+k = int(input("Через сколько этажей останавливается лифт: "))
+sum_upstairs = (kolya_floor-(((kolya_floor-1)//k)*k+1)) * 200
+sum_downstairs = (((math.ceil((kolya_floor-1)/k))*k+1)-kolya_floor) * 100
+print(min(sum_upstairs,sum_downstairs))
